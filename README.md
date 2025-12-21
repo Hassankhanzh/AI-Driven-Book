@@ -1,17 +1,23 @@
-# Website
+# AI-Driven Book: Physical AI & Humanoid Robotics Textbook
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains the complete Physical AI & Humanoid Robotics textbook created by Hassan Khan (GIAIC). It is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+
+## Table of Contents
+- Module 1: The Robotic Nervous System (ROS 2)
+- Module 2: The Digital Twin (Gazebo & Unity)
+- Module 3: The AI-Robot Brain (NVIDIA Isaac™)
+- Module 4: Vision-Language-Action (VLA)
 
 ## Installation
 
 ```bash
-yarn
+npm install
 ```
 
 ## Local Development
 
 ```bash
-yarn start
+npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -19,23 +25,24 @@ This command starts a local development server and opens up a browser window. Mo
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Deployment
-
-Using SSH:
+## Deployment to GitHub Pages
 
 ```bash
-USE_SSH=true yarn deploy
+npm run deploy
 ```
 
-Not using SSH:
+This command builds the website and deploys it to GitHub Pages using the `gh-pages` branch.
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## Project Structure
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- `docs/` - Contains all textbook content in Markdown format
+- `src/` - Custom source files for the Docusaurus site
+- `.specify/` - Spec-Kit Plus configuration and templates
+- `specs/` - Feature specifications and plans
+- `docusaurus.config.ts` - Main Docusaurus configuration
+- `sidebars.ts` - Navigation sidebar configuration

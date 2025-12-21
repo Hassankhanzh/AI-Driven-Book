@@ -18,12 +18,12 @@ const config: Config = {
   url: 'https://hassankhanzh.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/AI-Book/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Hassankhanzh', // Usually your GitHub org/user name.
-  projectName: 'AI-DrivenBook', // Usually your repo name.
+  projectName: 'AI-Book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 

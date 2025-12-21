@@ -1,0 +1,75 @@
+# Deployment API Contract
+
+## Build Endpoint
+```
+POST /api/build
+```
+
+### Request
+```json
+{
+  "target": "production",
+  "config": {
+    "url": "https://hassankhanzh.github.io",
+    "baseUrl": "/AI-Book/",
+    "organizationName": "Hassankhanzh",
+    "projectName": "AI-Book"
+  }
+}
+```
+
+### Response
+```json
+{
+  "status": "success",
+  "outputPath": "build/",
+  "buildTime": "2025-12-22T12:34:56Z",
+  "artifacts": [
+    "index.html",
+    "assets/js/*",
+    "assets/css/*",
+    "docs/*"
+  ]
+}
+```
+
+## Deploy Endpoint
+```
+POST /api/deploy
+```
+
+### Request
+```json
+{
+  "source": "build/",
+  "target": "github-pages",
+  "repository": "Hassankhanzh/AI-Book",
+  "branch": "gh-pages"
+}
+```
+
+### Response
+```json
+{
+  "status": "success",
+  "deploymentId": "deploy_12345",
+  "url": "https://hassankhanzh.github.io/AI-Book/",
+  "timestamp": "2025-12-22T12:34:56Z"
+}
+```
+
+## Validation Endpoint
+```
+GET /api/validate
+```
+
+### Response
+```json
+{
+  "status": "success",
+  "contentModules": 4,
+  "markdownFiles": 20,
+  "brokenLinks": 0,
+  "buildErrors": 0
+}
+```
