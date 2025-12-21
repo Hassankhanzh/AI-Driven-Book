@@ -1,0 +1,74 @@
+.rosConcept {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 20px 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+.header {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.node {
+  background-color: var(--ifm-color-primary);
+}
+
+.topic {
+  background-color: #28a745;
+}
+
+.service {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.action {
+  background-color: #17a2b8;
+}
+
+.parameter {
+  background-color: #6f42c1;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.content {
+  padding: 16px;
+}
+
+.description,
+.usage {
+  margin-bottom: 16px;
+}
+
+.description h4,
+.usage h4 {
+  margin-top: 0;
+  color: #495057;
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 4px;
+}
+
+.description p,
+.usage p {
+  margin-bottom: 0;
+  color: #6c757d;
+}
