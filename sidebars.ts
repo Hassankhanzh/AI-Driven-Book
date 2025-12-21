@@ -33,6 +33,36 @@ const sidebars: SidebarsConfig = {
         'module-1/urdf-modeling',
       ],
     },
+    {
+      type: 'category',
+      label: 'Module 2: The Digital Twin (Gazebo & Unity)',
+      items: [
+        'module-2/index',
+        'module-2/gazebo-physics',
+        'module-2/unity-environments',
+        'module-2/simulated-sensors',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 3: The AI-Robot Brain (NVIDIA Isaac™)',
+      items: [
+        'module-3/index',
+        'module-3/isaac-sim-synthetic-data',
+        'module-3/isaac-ros-perception',
+        'module-3/nav2-humanoid-planning',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 4: Vision-Language-Action (VLA)',
+      items: [
+        'module-4/index',
+        'module-4/voice-to-action-interfaces',
+        'module-4/llm-driven-cognitive-planning',
+        'module-4/capstone-autonomous-humanoid',
+      ],
+    },
   ],
 };
 
