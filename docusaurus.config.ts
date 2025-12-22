@@ -87,7 +87,6 @@ const config: Config = {
           position: 'left',
           label: 'Textbook',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Hassankhanzh/AI-DrivenBook',
           label: 'GitHub',
